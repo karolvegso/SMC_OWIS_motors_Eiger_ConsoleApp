@@ -723,6 +723,9 @@ namespace SMC_OWIS_motors_Eiger_ConsoleApp_01
                     Console.WriteLine("Acquition started");
                     Console.WriteLine("Checking buffer?");
 
+                    // wait 500 ms or 0.5 seconds
+                    Thread.Sleep(500);
+
                     // do reading image data using monitor
                     // initialize image matrix or array
                     int[,] imageData = new int[512, 1028];
